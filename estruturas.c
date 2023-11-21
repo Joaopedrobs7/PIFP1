@@ -7,11 +7,14 @@ void inithead(listreference** head){
 }
 
 void insert(listreference** head,historico p){
-    struct people* aux;
+    struct historico* aux;
     aux = malloc(sizeof(historico));
+    strcpy(aux->cor,p.cor);
+    aux->next = NULL;
 
     if(((*head)->first) ==  NULL){
         (*head)->first = aux;
+        
     }
 
     else{

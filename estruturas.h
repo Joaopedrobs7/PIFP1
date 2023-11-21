@@ -5,18 +5,18 @@
     #include <stdlib.h>
     #include <string.h>
 
-    typedef struct dado{
+typedef struct dado{
     int dado1;
     int dado2;
 }dado;
 
 typedef struct historico{
     char cor[20];
-    struct people* next;
+    struct historico* next;
 }historico;
 
 typedef struct listreference{
-    struct people* first;
+    struct historico* first;
 }listreference;
 
     
