@@ -4,8 +4,9 @@
     #include <stdio.h>
     #include <stdlib.h>
     #include <time.h>
-    #include<unistd.h>
+    #include <unistd.h>
+   #include "estruturas.h"
 
-    int shuffle();
-    
+    void shuffle(dado dado);
+
 #endif  /*FILE_A*/
