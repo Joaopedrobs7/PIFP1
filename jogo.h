@@ -4,7 +4,8 @@
     #include <stdio.h>
     #include <stdlib.h>
     #include <time.h>
+    #include<unistd.h>
 
-    void shuffle();
+    int shuffle();
     
 #endif  /*FILE_A*/

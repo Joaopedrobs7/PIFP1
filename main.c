@@ -6,7 +6,9 @@
 int main(){
     // listreference* head;
     // inithead(&head);
-    shuffle();
+    for (int i  = 0 ; i<5; i++){
+        printf("%d\n",shuffle());
+    }
     
 
     return 0;

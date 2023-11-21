@@ -6,7 +6,7 @@ void inithead(listreference** head){
     (*head)->first = NULL;
 }
 
-void insert(listreference** head,struct historico p){
+void insert(listreference** head,historico p){
     struct people* aux;
     aux = malloc(sizeof(historico));
 
