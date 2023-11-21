@@ -7,6 +7,7 @@
 
 typedef struct player{
     float money;
+    int choice;
 }player;
 
 typedef struct dado{

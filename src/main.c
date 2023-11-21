@@ -9,15 +9,21 @@ int main(){
     player jogador;
     dado player;
     dado banker;
-    startgame(jogador);
-
+    
+    create_player(&jogador);
+    saldo(jogador);
+    
+    bet(&jogador);
+    saldo(jogador);
     
     player = shuffle(player);
     banker = shuffle(banker);
+
+    match(&jogador,player,banker);
+    saldo(jogador);
     
     
-    printf("PLAYER:\nDado 1 = %d\nDado 2 = %d\nBanker:\nDado 1 = %d\nDado 2 = %d",player.dado1,player.dado2,banker.dado1,banker.dado2);
-   
+
     
    
     

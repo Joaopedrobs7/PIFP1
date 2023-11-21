@@ -8,5 +8,9 @@
    #include "estruturas.h"
 
     dado shuffle(dado dado);
-    void startgame(player player);
+    void create_player(player* player);
+    void bet(player* player);
+    void saldo(player player);
+    void match(player* jogador,dado player,dado banker);
+    
 #endif  /*FILE_A*/
