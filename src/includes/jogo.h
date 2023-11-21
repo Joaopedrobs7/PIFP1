@@ -7,6 +7,6 @@
     #include <unistd.h>
    #include "estruturas.h"
 
-    void shuffle(dado dado);
-
+    dado shuffle(dado dado);
+    void startgame(player player);
 #endif  /*FILE_A*/

@@ -5,6 +5,10 @@
     #include <stdlib.h>
     #include <string.h>
 
+typedef struct player{
+    float money;
+}player;
+
 typedef struct dado{
     int dado1;
     int dado2;
