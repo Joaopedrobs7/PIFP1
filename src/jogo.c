@@ -13,7 +13,7 @@ void shuffle(dado dado){
     
     printf("Girando o Segundo dado..\n");
     sleep(5);
-    int numbe2 = rand()%6 +1;
+    int number2 = rand()%6 +1;
     dado.dado2 = number;
     
 
