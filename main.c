@@ -4,11 +4,19 @@
 
 
 int main(){
-    // listreference* head;
-    // inithead(&head);
-    for (int i  = 0 ; i<5; i++){
-        printf("%d\n",shuffle());
-    }
+    listreference* head;
+    inithead(&head);
+    dado player;
+    dado banker;
+    
+    shuffle(player);
+    shuffle(banker);
+    
+    
+    printf("PLAYER:\nDado 1 = %d\nDado 2 = %d\nBanker:\nDado 1 = %d\nDado 2 = %d",player.dado1,player.dado2,banker.dado1,banker.dado2);
+   
+    
+   
     
 
     return 0;
