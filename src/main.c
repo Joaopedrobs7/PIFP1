@@ -13,9 +13,11 @@ int main(){
     create_player(&jogador);
     saldo(jogador);
     
+   
     bet(&jogador);
     saldo(jogador);
     
+    //girando os dados
     player = shuffle(player);
     banker = shuffle(banker);
 
