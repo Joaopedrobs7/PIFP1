@@ -1,5 +1,5 @@
 #include "includes/jogo.h"
-#include "includes/time.h"
+#include <time.h>
 #include "includes/estruturas.h"
 
     
