@@ -1,6 +1,6 @@
-#include "jogo.h"
-#include "time.h"
-#include "estruturas.h"
+#include "includes/jogo.h"
+#include "includes/time.h"
+#include "includes/estruturas.h"
 
     
 

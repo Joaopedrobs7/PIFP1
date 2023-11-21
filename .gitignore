@@ -10,3 +10,5 @@
 *.x86_64
 *.hex
 .vscode/c_cpp_properties.json
+*.o
+*.deb
