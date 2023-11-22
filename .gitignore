@@ -1,5 +1,6 @@
-.vscode
-.idea
+
+.vscode/settings.json
+
 
 # Executables
 *.exe
@@ -8,5 +9,6 @@
 *.i*86
 *.x86_64
 *.hex
+.vscode/c_cpp_properties.json
 *.o
 *.deb
