@@ -26,6 +26,7 @@ typedef struct listreference{
 
     
     void inithead(listreference** head);
-    void insert(listreference** head,struct historico p);
+    void insert(listreference** head,char* winner);
+    void printlist(listreference** head);
 
 #endif  /*FILE_H*/

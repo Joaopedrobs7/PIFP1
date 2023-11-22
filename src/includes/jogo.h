@@ -11,6 +11,6 @@
     void create_player(player* player);
     void bet(player* player);
     void saldo(player player);
-    void match(player* jogador,dado player,dado banker);
-    
+    void match(player* jogador,dado player,dado banker,char* winner);
+    void depositar(player* jogador);
 #endif  /*FILE_A*/

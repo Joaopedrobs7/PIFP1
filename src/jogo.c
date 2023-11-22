@@ -8,18 +8,44 @@ void create_player(player* player){
     player->money = 100;
 }
 
-void bet(player* jogador){
-    printf("1)PLAYER\t2)TIE\t3)BANKER\n");
-    int choice;
-    puts("aposta:");
-    scanf("%d",&choice);
-    jogador->money -= 50;
-    jogador->choice = choice;
+void depositar(player* jogador){
+    int fichas;
+    printf("Deseja Comprar quantas fichas?\n");
+    scanf("%d",&fichas);
+    jogador->money += fichas*50;
 }
-void match(player* jogador,dado player,dado banker){
+void bet(player* jogador){
+    if(jogador->money < 50){
+        printf("Saldo insuficiente\n");
+        printf("1)Depositar\n2)Sair do jogo\n");
+        int choice_deposit;
+        scanf("%d",&choice_deposit);
+        if(choice_deposit == 1){
+            depositar(jogador);
+            printf("1)PLAYER\t2)TIE\t3)BANKER\n");
+            int choice_bet;
+            puts("aposta:");
+            scanf("%d",&choice_bet);
+            jogador->money -= 50;
+            jogador->choice = choice_bet;
+        }
+        else{
+            exit(1);
+        }
+    }
+    else{
+        printf("1)PLAYER\t2)TIE\t3)BANKER\n");
+        int choice_bet;
+        puts("aposta:");
+        scanf("%d",&choice_bet);
+        jogador->money -= 50;
+        jogador->choice = choice_bet;
+    }
+    
+}
+void match(player* jogador,dado player,dado banker,char* winner){
     int sum_player = player.dado1 + player.dado2;
     int sum_banker = banker.dado1 + banker.dado2;
-    char winner[10];
     int winner_id = 0;
     if(sum_player > sum_banker){
         strcpy(winner,"Player");
@@ -27,18 +53,26 @@ void match(player* jogador,dado player,dado banker){
     }
     else if (sum_player<sum_banker){
         strcpy(winner,"Banker");
-        winner_id = 2;
+        winner_id = 3;
     }
-    else{
+    else if (sum_player == sum_banker){
         strcpy(winner,"Tie");
+        winner_id = 2;
         
     }
+    
     if(jogador->choice == winner_id){
-        jogador->money += 50*2;
+        if(winner_id == 2){
+            jogador->money += 50*5;
+        }
+        else{
+            jogador->money += 50*2;
+        }
     }
-    else if(strcmp(winner,"Tie") == 0){
+    else if((strcmp(winner,"Tie") == 0) && jogador->choice!= 2){
         jogador->money += 50*0.9;
     }
+
 }
 
 void saldo(player player){

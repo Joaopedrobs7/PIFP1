@@ -6,10 +6,10 @@ void inithead(listreference** head){
     (*head)->first = NULL;
 }
 
-void insert(listreference** head,historico p){
+void insert(listreference** head,char* winner){
     struct historico* aux;
     aux = malloc(sizeof(historico));
-    strcpy(aux->cor,p.cor);
+    strcpy(aux->cor,winner);
     aux->next = NULL;
 
     if(((*head)->first) ==  NULL){
@@ -19,10 +19,22 @@ void insert(listreference** head,historico p){
 
     else{
         historico* curr = (*head)->first;
-        while(curr!=NULL){
+        while(curr->next != NULL){
             curr = curr->next;
         }
-        curr = aux;
+        curr->next = aux;
     }
-    free(aux);
+    
+}
+void printlist(listreference** head){
+    historico* aux = (*head)->first;
+    puts("\n\nULTIMAS RODADAS ");
+    puts("==================================");
+    while(aux!=NULL){
+        
+        printf("%s\t",aux->cor);
+        aux = aux->next;
+    }
+    printf("\n");
+    puts("==================================");
 }
