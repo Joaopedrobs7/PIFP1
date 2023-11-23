@@ -5,7 +5,8 @@
     #include <stdlib.h>
     #include <time.h>
     #include <unistd.h>
-   #include "estruturas.h"
+    #include "estruturas.h"
+    
 
     dado shuffle(dado dado);
     void create_player(player* player);

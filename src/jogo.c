@@ -22,9 +22,10 @@ void bet(player* jogador){
         scanf("%d",&choice_deposit);
         if(choice_deposit == 1){
             depositar(jogador);
-            printf("1)PLAYER\t2)TIE\t3)BANKER\n");
+            printf("|PLAYER|  |TIE|  |BANKER|\n");
+            printf("    1       2        3\n");
             int choice_bet;
-            puts("aposta:");
+            puts("\nAPOSTE NA MÃO VENCEDORA: ");
             scanf("%d",&choice_bet);
             jogador->money -= 50;
             jogador->choice = choice_bet;
@@ -34,9 +35,10 @@ void bet(player* jogador){
         }
     }
     else{
-        printf("1)PLAYER\t2)TIE\t3)BANKER\n");
+        printf("|PLAYER|  |TIE|  |BANKER|\n");
+        printf("    1       2        3\n");
         int choice_bet;
-        puts("aposta:");
+        puts("\nAPOSTE NA MÃO VENCEDORA: ");
         scanf("%d",&choice_bet);
         jogador->money -= 50;
         jogador->choice = choice_bet;
@@ -85,14 +87,21 @@ dado shuffle(dado dado){
     sleep(5);
     int number = rand()%6 +1;
     dado.dado1 = number;
-    printf("Primeiro numero = %d\n",number);
+    printf(" _______\n");
+    printf("|       |\n");
+    printf("|   %d   |\n",number);
+    printf("|_______|\n");
+    printf("\n");
     
     printf("Girando o Segundo dado..\n");
     sleep(5);
     int number2 = rand()%6 +1;
-    printf("Segundo Numero = %d\n",number2);
+    printf(" _______\n");
+    printf("|       |\n");
+    printf("|   %d   |\n",number2);
+    printf("|_______|\n");
+    printf("\n");
     dado.dado2 = number2;
     
-return dado;
+    return dado;
 }
-
