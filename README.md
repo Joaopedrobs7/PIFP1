@@ -10,10 +10,18 @@
 
 Clone o repositório na sua máquina antes de qualquer coisa.
 
-- "cd src"
-- "make"
-- "./play"
-
+No terminal, navegue até o diretório "src".
+```
+cd src
+```
+Digite "make" para compilar o programa.
+```
+make
+```
+E finalmente, digite "play" para iniciar o jogo.
+```
+./play
+```
 ## Como jogar?
 
 Você inialmente irá começar com 100 reais.
