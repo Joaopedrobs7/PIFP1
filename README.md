@@ -29,7 +29,7 @@ Você inialmente irá começar com 100 reais.
 1° - Escolha carinhosamente onde vai apostar
       <br> Sendo assim: Player; Banker; Tie(Empate).
 
-2° - Caso perca todo o dinheiro, 
+2° - Caso perca todo o dinheiro, compre mais fichas ou saia do jogo.
 
 ### Linguagem e Ferramentas
 ![C](https://img.shields.io/badge/C-000000?style=for-the-badge&logo=code&logoColor=white)
