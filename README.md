@@ -35,6 +35,6 @@ Você inialmente irá começar com 100 reais.
 ![C](https://img.shields.io/badge/C-000000?style=for-the-badge&logo=code&logoColor=white)
 ![VSCode](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Trello](https://img.shields.io/badge/Trello-0079BF?style=for-the-badge&logo=trello&logoColor=white)
-![CLion](https://img.shields.io/badge/CLion-000000?style=for-the-badge&logo=clion&logoColor=white)
+
 
 
